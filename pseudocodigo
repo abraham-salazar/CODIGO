@@ -1,6 +1,6 @@
 Función ordenar_lista(lista):
     Si tamaño de lista es 1 o menos:
-        Devolver lista
+        Imprimir lista
     
     // Dividir la lista en dos partes
     mitad = tamaño de lista / 2
@@ -14,7 +14,7 @@ Función ordenar_lista(lista):
     // Fusionar las partes ordenadas
     lista_ordenada = fusionar_partes(izquierda, derecha)
     
-    Devolver lista_ordenada
+    Imprimir lista_ordenada
 
 Función fusionar_partes(izquierda, derecha):
     lista_ordenada = []
@@ -30,4 +30,5 @@ Función fusionar_partes(izquierda, derecha):
     agregar todos los elementos restantes de izquierda a lista_ordenada
     agregar todos los elementos restantes de derecha a lista_ordenada
     
-    Devolver lista_ordenada
+    Imprimir lista_ordenada
+
