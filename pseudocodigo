@@ -1,0 +1,33 @@
+Función ordenar_lista(lista):
+    Si tamaño de lista es 1 o menos:
+        Devolver lista
+    
+    // Dividir la lista en dos partes
+    mitad = tamaño de lista / 2
+    izquierda = primer mitad de lista
+    derecha = segunda mitad de lista
+    
+    // Ordenar recursivamente cada parte
+    izquierda = ordenar_lista(izquierda)
+    derecha = ordenar_lista(derecha)
+    
+    // Fusionar las partes ordenadas
+    lista_ordenada = fusionar_partes(izquierda, derecha)
+    
+    Devolver lista_ordenada
+
+Función fusionar_partes(izquierda, derecha):
+    lista_ordenada = []
+    mientras izquierda no esté vacía y derecha no esté vacía:
+        si primer elemento de izquierda <= primer elemento de derecha:
+            agregar primer elemento de izquierda a lista_ordenada
+            eliminar primer elemento de izquierda
+        sino:
+            agregar primer elemento de derecha a lista_ordenada
+            eliminar primer elemento de derecha
+    
+    // Agregar los elementos restantes, si los hay
+    agregar todos los elementos restantes de izquierda a lista_ordenada
+    agregar todos los elementos restantes de derecha a lista_ordenada
+    
+    Devolver lista_ordenada
